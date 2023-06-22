@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title> 
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b91dc20a6e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./img/ProfilePic.jpg">
+            <h2>Rohan Patil</h2>
+            <p>Full Stack Developer</p>
+            <div class="links">
+                <a href="https://www.instagram.com/rohan_balkrishna_patil/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="https://github.com/Phoenix1594"><i class="fa-brands fa-github fa-xl"></i></a>
+                <a href="https://www.linkedin.com/in/rohan-patil-759606184/"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+            </div>
+            <a href="./resume/Rohan patil.pdf" class="btn" >Resume</a>
+            <a href="./education/edu.html" class="btn" >Education</a>
+            <a href="./project/Project.html" class="btn" >Projects</a>
+            <!-- <a href="#" class="btn" onclick="showtoast(invalidmsg)">About Me</a> -->
+            <!-- <a href="#" class="btn" onclick="window.print()">Print</a> -->
+            <a href="#" class="btn" onclick="showtoast(invalidmsg)">Experience</a>
+        </div>
+    </div>
+
+    <div class="chatbot">
+        <div class="header">
+          <h3>Chatbot</h3>
+          <button id="toggleBtn" onclick="toggleChat()">Open</button>
+        </div>
+        <div id="chatWindow" class="chat-window">
+          <div class="messages">
+            <div class="message">Welcome! I'm Rohan's ChatBot.</div>
+          </div>
+          <div class="options">
+            <button onclick="sendMessage('Hello')">Hello</button>
+            <!-- <button onclick="sendMessage('How are you?')">How are you?</button> -->
+            <button onclick="sendMessage('Contact Number')">Contact Number</button>
+            <button onclick="sendMessage('Mail Id')">Mail ID</button>
+            <!-- <button onclick="sendMessage('Goodbye')">Goodbye</button> -->
+          </div>
+        </div>
+    </div>
+    
+    <div id="toastbox"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
